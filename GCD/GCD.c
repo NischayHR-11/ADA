@@ -2,6 +2,20 @@
 #include<stdlib.h>
 
 
+int Euclid(int m,int n)
+{
+    int r;
+    int count=0;
+    while(n)
+    {
+    count++;
+    r=m%n;
+    m=n;
+    n=r;
+    }
+    return count;
+}
+
 int modifiedEuclids(int m ,int n){
 
     int count=0;
